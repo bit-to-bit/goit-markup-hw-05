@@ -758,7 +758,7 @@ text-align: center;
 /* input[type='checkbox'] {
   display: none;
 } */
-input[type='checkbox']:checked+span{
+input[type='checkbox']:checked .checkbox{
     background-color: var(--cl-accent);
     border: none;
     fill: var(--cl-light);
