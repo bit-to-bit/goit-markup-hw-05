@@ -544,7 +544,7 @@ text-align: center;
     padding: 72px 24px 24px 24px;
     border-radius: 4px;
     opacity: 0;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: var(--cl-modal-background);
 
@@ -585,6 +585,11 @@ text-align: center;
 .modal-btn-icon {
     stroke: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: var(--cl-white-background);
 }
 
 .modal-caption {
