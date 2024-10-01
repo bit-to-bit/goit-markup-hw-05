@@ -784,3 +784,52 @@ input[type='checkbox']:checked+.checkbox>.checkbox-icon {
 }
 
 /* #endregion */
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.email-input {
+    border: 1px solid var(--cl-white-background);
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 8px 8px 8px 16px;
+    color: var(--cl-white-background:);
+    background: transparent;
+    outline: none;
+    line-height: 2;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+}
+
+.email-input::placeholder {
+    color: var(--cl-white-background);
+}
+
+.subscribe-icon {
+    margin-left: 16px;
+}
+
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    min-height: 40px;
+    min-width: 165px;
+    background-color: var(--cl-primary-brand);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-footer{
+    color: var(--cl-white-background);
+    margin-bottom: 16px;
+}

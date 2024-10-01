@@ -576,125 +576,145 @@
             </li>
           </ul>
         </div>
-      </div>
-
-      <!-- #region Modal window -->
-      <!-- <div class="backdrop js-modal">    -->
-
-      <div class="backdrop is-open">
-        <div class="modal">
-          <button class="modal-btn js-close-modal" type="button">
-            <svg class="modal-btn-icon" width="24" height="24">
-              <use href="./images/icons.svg#x-close"></use>
-            </svg>
-          </button>
-
-          <p class="modal-caption">
-            Leave your contacts and we will call you back
-          </p>
-
-          <form class="reviews-form" name="reviews_form">
-            <div class="form-wrapper">
-              <label class="form-label" for="userName">Name</label>
-              <div class="form-field">
-                <input
-                  class="form-input"
-                  type="text"
-                  id="userName"
-                  name="userName"
-                  minlength="3"
-                  required
-                  placeholder="&nbsp;"
-                />
-                <svg class="form-icon" width="24" height="24">
-                  <use href="./images/icons.svg#men"></use>
-                </svg>
-                <svg class="error" width="24" height="24">
-                  <use href="./images/icons.svg#error"></use>
-                </svg>
-                <span class="error-text">Minimum 3 chars</span>
-              </div>
-            </div>
-            <div class="form-wrapper">
-              <label class="form-label" for="userPhone">Phone</label>
-              <div class="form-field">
-                <input
-                  class="form-input"
-                  type="tel"
-                  id="userPhone"
-                  name="userPhone"
-                />
-                <svg class="form-icon" width="24" height="24">
-                  <use href="./images/icons.svg#phone"></use>
-                </svg>
-                <svg class="error" width="24" height="24">
-                  <use href="./images/icons.svg#error"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-wrapper">
-              <label class="form-label" for="userEmail">Email</label>
-              <div class="form-field">
-                <input
-                  class="form-input"
-                  type="email"
-                  id="userEmail"
-                  name="userEmail"
-                  required
-                  placeholder="&nbsp;"
-                />
-                <svg class="form-icon" width="24" height="24">
-                  <use href="./images/icons.svg#email"></use>
-                </svg>
-                <svg class="error" width="24" height="24">
-                  <use href="./images/icons.svg#error"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-wrapper">
-              <label class="form-label" for="userComment">Comment</label>
-              <textarea
-                class="form-comment"
-                name="userComment"
-                id="userComment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-
-            <label class="form-agreement">
+        <div class="footer-form-holder">
+          <p class="subscribe-footer">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="footer-form-label" for="subscribe">
               <input
-                class="visually-hidden"
-                type="checkbox"
-                name="userAgreement"
-                value="true"
-                checked
+                class="email-input"
+                placeholder="E-mail"
+                type="email"
+                id="subscribe"
+                name="email"
+                autofocus
               />
-              <span class="checkbox">
-                <svg class="checkbox-icon" width="10" height="10">
-                  <use href="./images/icons.svg#check-mark"></use>
-                </svg>
-              </span>
-
-              <span class="form-agreement-text">
-                I accept the terms and conditions of the
-                <a
-                  class="form-agreement-link"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Privacy Policy
-                </a>
-              </span>
             </label>
-
-            <button class="btn btn-accent" type="submit">Send</button>
+            <button class="btn subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
-      <!-- #endregion -->
     </footer>
+    <!-- #endregion -->
+    <!-- #region Modal window -->
+    <div class="backdrop js-modal">
+      <!-- 
+    <div class="backdrop is-open"> -->
+      <div class="modal">
+        <button class="modal-btn js-close-modal" type="button">
+          <svg class="modal-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#x-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="reviews-form" name="reviews_form">
+          <div class="form-wrapper">
+            <label class="form-label" for="userName">Name</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="text"
+                id="userName"
+                name="userName"
+                minlength="3"
+                required
+                placeholder="&nbsp;"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#men"></use>
+              </svg>
+              <svg class="error" width="24" height="24">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+              <span class="error-text">Minimum 3 chars</span>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label class="form-label" for="userPhone">Phone</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="tel"
+                id="userPhone"
+                name="userPhone"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+              <svg class="error" width="24" height="24">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label class="form-label" for="userEmail">Email</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                required
+                placeholder="&nbsp;"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+              <svg class="error" width="24" height="24">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userComment">Comment</label>
+            <textarea
+              class="form-comment"
+              name="userComment"
+              id="userComment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <label class="form-agreement">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="userAgreement"
+              value="true"
+              checked
+            />
+            <span class="checkbox">
+              <svg class="checkbox-icon" width="10" height="10">
+                <use href="./images/icons.svg#check-mark"></use>
+              </svg>
+            </span>
+
+            <span class="form-agreement-text">
+              I accept the terms and conditions of the
+              <a
+                class="form-agreement-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Policy
+              </a>
+            </span>
+          </label>
+
+          <button class="btn btn-accent" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
     <!-- #endregion -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/scroll-animation.js"></script>
