@@ -574,13 +574,21 @@ text-align: center;
 
 }
 
-.modal-btn:hover,
+.modal-btn:hover {
+    color: var(--cl-accent);
+    background-color: var(--cl-pressed-state);
+    border: none;
+    fill: var(--cl-white-background);
+}
+
 .modal-btn:focus {
     color: var(--cl-accent);
     background-color: var(--cl-pressed-state);
     border: none;
     fill: var(--cl-white-background);
 }
+
+
 
 .modal-btn-icon {
     stroke: currentColor;
