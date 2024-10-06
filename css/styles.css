@@ -613,8 +613,6 @@ img {
 
 }
 
-.reviews-form {}
-
 .form-wrapper {
     margin-bottom: 8px;
 }
@@ -677,10 +675,6 @@ img {
 .form-input:hover+.form-icon {
     stroke: rgb(var(--cl-accent));
     fill: var(--cl-primary-brand);
-}
-
-.form-input:not(:placeholder-shown):focus:invalid:required+.form-icon {
-    stroke: #e74a3b;
 }
 
 .error {
@@ -763,31 +757,16 @@ img {
     fill: transparent;
 }
 
-.input-checkbox:checked+.form-agreement-text>.custom-checkbox {
-    border: none;
-    background-color: var(--cl-accent);
-    fill: var(--cl-light);
-}
-
-.input-checkbox:checked .custom-checkbox {
+.input-checkbox:checked+.form-agreement-text .custom-checkbox {
     background-color: var(--cl-pressed-state);
     border: none;
     fill: var(--cl-light);
-}
-
-input[type='checkbox']:focus-visible+.custom-checkbox {
-    outline: 2px solid var(--cl-accent);
-    outline-offset: 2px;
 }
 
 .checkbox-icon {
     opacity: 0;
     fill: var(cl-modal-overlay);
     transition: var(--anim-fast);
-}
-
-input[type='checkbox']:checked+.custom-checkbox>.checkbox-icon {
-    opacity: 1;
 }
 
 .form-agreement-text {
