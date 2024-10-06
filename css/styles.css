@@ -26,6 +26,7 @@
     --items: 4;
     --indent-col: 24px;
     --indent-row: var(--indent-col);
+    --transition-type: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -518,25 +519,24 @@ img {
 
 /* #region Modal*/
 .backdrop {
+    background: var(--cl-modal-input-boder);
     position: fixed;
-    /* inset: 0; */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(var(--cl-primary) / 16%);
-    backdrop-filter: blur(4px);
-    background-color: var(--cl-modal-input-boder);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--transition-type), visibility var(--transition-type);
 }
 
 .backdrop.is-open {
     opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
+    pointer-events: auto;
 }
 
 .modal {
@@ -551,7 +551,7 @@ img {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.20), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14);
     min-height: 584px;
     overflow-y: auto;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition-type);
     transform: translate(-50%, -50%);
 }
 
