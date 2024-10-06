@@ -18,7 +18,7 @@
     --cl-modal-overlay: #2E2F42;
     --cl-hero-background: #2E2F42;
     --cl-hero-gradient: rgba(46, 47, 66, 0.7);
-    --cl-modal-input-boder: rgba(46, 47, 66, 0.4);
+    --cl-modal-input-boder: rgba(46, 47, 66, 0.40);
     --cl-white-background: #FFFFFF;
     --cl-modal-background: #FCFCFC;
 
@@ -635,7 +635,6 @@ img {
     width: 100%;
     height: 40px;
     padding: 11px 38px;
-
     font-size: 12px;
     letter-spacing: 0.04em;
     color: var(cl-modal-overlay);
@@ -650,10 +649,6 @@ img {
 .form-input:focus,
 .form-input:hover {
     border-color: var(--cl-primary-brand);
-}
-
-.form-input:not(:placeholder-shown):focus:invalid:required {
-    border-color: #e74a3b;
 }
 
 .comment {
@@ -677,53 +672,20 @@ img {
     fill: var(--cl-primary-brand);
 }
 
-.error {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: var(--anim-fast);
-    transition-property: opacity;
-}
-
-.form-input:not(:placeholder-shown):focus:invalid:required~.error {
-    opacity: 1;
-}
-
-.error-text {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(110%) scale(0.3);
-    width: 100%;
-
-    text-align: center;
-    color: #e74a3b;
-    opacity: 0;
-
-    transition: var(--anim-fast);
-    transition-property: transform, opacity;
-}
-
-.form-input:not(:placeholder-shown):focus:invalid:required~.error-text {
-    opacity: 1;
-    transform: translateY(110%) scale(1);
-}
-
 .form-comment {
     display: block;
     width: 100%;
     height: 120px;
+    border-radius: 4px;
+    border: 1px solid var(--cl-modal-input-boder);
+    resize: none;
     padding: 8px 16px;
+    outline: transparent;
     font-size: 12px;
     letter-spacing: 0.04em;
     line-height: 1.17;
     color: var(--cl-modal-input-boder);
     background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid var(--cl-modal-input-boder);
-    outline: transparent;
-    resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
